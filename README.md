@@ -3,7 +3,7 @@
 This is a sample search application written in [React](https://reactjs.org/). It demonstrates the rudiments 
 of _end-to-end_ functional testing with [Cypress](https://www.cypress.io/). 
 
-![Search components](https://github.com/bobmacneal/simple-hooks-search/blob/master/src/images/SearchComponents.png)
+![Search components](https://github.com/bobmacneal/cypress-search-tutorial/blob/master/src/images/SearchComponents.png)
 
 [Material-UI](https://material-ui.com/) React components are used for design and functional simplicity.
  
@@ -23,7 +23,7 @@ to fire up the test runner (shown below):
 
 `yarn cy`
 
-![video](https://github.com/bobmacneal/simple-hooks-search/blob/master/src/images/searchspecjs.gif)
+![video](https://github.com/bobmacneal/cypress-search-tutorial/blob/master/src/images/searchspecjs.gif)
 
 to run tests in a command shell:
 
