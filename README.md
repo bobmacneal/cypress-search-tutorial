@@ -37,10 +37,10 @@ Alternatively, to run all the Cypress tests from a command shell, issue the foll
 
 **cypress-search-tutorial**:
 
-- Uses [Hacker News search API](https://hn.algolia.com/api) to a submit search term and to 
+- Uses [Hacker News search API](https://hn.algolia.com/api) to submit a search term and to 
 display the resulting hits returned.
 
-- Used examples provided in the 
+- Borrowed from general examples provided in the 
 [Cypress Tutorial Videos](https://docs.cypress.io/examples/examples/tutorials.html#Test-a-React-Todo-App).
 
 - Was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
