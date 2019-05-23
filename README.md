@@ -10,25 +10,27 @@ ___
  
 ### Setup
 
-1. Clone the repository: `git clone https://github.com/bobmacneal/simple-hooks-search.git`
+1. Clone the repository 
+    `$ git clone https://github.com/bobmacneal/simple-hooks-search.git`
 2. Install [Yarn](https://yarnpkg.com) for package management. 
-3. Install node dependencies using yarn: `yarn`
+3. Install node dependencies using yarn
+    `$ yarn`
 
 ### Run
 
-`yarn start`
+`$ yarn start`
 
 ### Cypress Tests
 
 to fire up the test runner (shown below): 
 
-`yarn cy`
+`$ yarn cy`
 
 ![video](https://github.com/bobmacneal/cypress-search-tutorial/blob/master/src/images/searchspecjs.gif)
 
 to run tests in a command shell:
 
-`yarn cy:all`
+`$ yarn cy:all`
 
 
 ### Hat Tips
