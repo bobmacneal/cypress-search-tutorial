@@ -1,34 +1,45 @@
 import 'typeface-roboto'
 import {AppBar, Typography, withStyles} from '@material-ui/core'
+import React, {useState} from 'react'
 import Logo from './images/logo.png'
 import {MuiThemeProvider} from '@material-ui/core/styles'
 import {PropTypes} from 'prop-types'
-import React from 'react'
+import SearchForm from './components/SearchForm'
+import SearchResults from './components/SearchResults'
 import simpleTheme from './simpleTheme'
 
-const App = ({classes}) => (
-  <MuiThemeProvider theme={simpleTheme}>
-    <AppBar color="primary" elevation={1} position="fixed" className={classes.appBar}>
-      <React.Fragment>
-        <div className={classes.logo}>
-          <img src={Logo} height="40" alt="cypress-search-tutorial" />
-        </div>
-        <div className={classes.title}>
-          <Typography
-            align="right"
-            variant="subtitle2"
-            color="black"
-          >
-            {`cypress-search-tutorial v-${process.env.REACT_APP_VERSION}`}
-          </Typography>
-        </div>
-      </React.Fragment>
-    </AppBar>
-    <div style={{margin: '80px 15px 15px 15px'}}>
-      CONTENT
-    </div>
-  </MuiThemeProvider>
-)
+function App ({classes}) {
+  const [searchTerm, setSearchTerm] = useState('')
+
+  function handleFormSubmitted (term) {
+    setSearchTerm(term)
+  }
+
+  return (
+    <MuiThemeProvider theme={simpleTheme}>
+      <AppBar color="primary" elevation={1} position="fixed" className={classes.appBar}>
+        <React.Fragment>
+          <div className={classes.logo}>
+            <img src={Logo} height="40" alt="cypress-search-tutorial" />
+          </div>
+          <div className={classes.title}>
+            <Typography
+              align="right"
+              variant="subtitle2"
+              color="black"
+            >
+              {`cypress-search-tutorial v-${process.env.REACT_APP_VERSION}`}
+            </Typography>
+          </div>
+        </React.Fragment>
+      </AppBar>
+      <div style={{margin: '80px 15px 15px 15px'}}>
+        <SearchForm onFormSubmited={handleFormSubmitted} />
+        <SearchResults searchTerm={searchTerm} />
+      </div>
+    </MuiThemeProvider>
+  )
+}
 
 App.propTypes = {
   classes: PropTypes.object.isRequired,
