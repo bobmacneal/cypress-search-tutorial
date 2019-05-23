@@ -1,6 +1,6 @@
 {
   "name": "cypress-search-tutorial",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "ReactJs search application that demonstrates react hooks and functional testing with Cypress",
   "main": "index.js",
   "keywords": [
@@ -12,7 +12,7 @@
     "automation",
     "end-to-end",
     "integration"
-   ],
+  ],
   "author": "Bob MacNeal <bob.macneal@workingcompany.com>",
   "license": "MIT",
   "repository": {
@@ -53,6 +53,7 @@
     ]
   },
   "devDependencies": {
+    "cypress": "^3.3.1",
     "eslint-config-standard-jsx": "^6.0.2"
   }
 }
