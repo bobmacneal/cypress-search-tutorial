@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "cypress-search",
+  "name": "Cypress Search Tutorial",
   "icons": [
     {
       "src": "favicon.ico",

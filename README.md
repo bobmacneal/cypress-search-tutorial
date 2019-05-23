@@ -1,68 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# cypress-search-tutorial 
 
-## Available Scripts
+This is a sample search application written in [React](https://reactjs.org/). It demonstrates the rudiments 
+of _end-to-end_ functional testing with [Cypress](https://www.cypress.io/). 
 
-In the project directory, you can run:
+![Search component](https://github.com/bobmacneal/simple-hooks-search/blob/master/src/images/SearchComponent.png)
 
-### `npm start`
+[Material-UI](https://material-ui.com/) React components are used for design and functional simplicity.
+ 
+### Setup
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Clone the repository: `git clone https://github.com/bobmacneal/simple-hooks-search.git`
+2. Install [Yarn](https://yarnpkg.com) for package management. 
+3. Install node dependencies using yarn: `yarn`
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Run
 
-### `npm test`
+`yarn start`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Cypress Tests
 
-### `npm run build`
+to fire up the test runner (shown below): 
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`yarn cy`
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+![video](https://github.com/bobmacneal/simple-hooks-search/blob/master/src/images/searchspecjs.gif)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+to run tests in a command shell:
 
-### `npm run eject`
+`yarn cy:all`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Hat Tips
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **simple-hooks-search** is based on exercises found in the Udemy course [React Hooks](https://www.udemy.com/react-hooks/) by [Reed Barger](https://www.udemy.com/react-hooks/#instructor-1) and on an informative blog post: [How to fetch data with React Hooks](https://www.robinwieruch.de/react-hooks-fetch-data/) by [Robin Wieruch](https://github.com/rwieruch).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **simple-hooks-search** Cypress testing is guided by [Cypress Tutorial Videos](https://docs.cypress.io/examples/examples/tutorials.html#Test-a-React-Todo-App).
 
-## Learn More
+- **simple-hooks-search** was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **simple-hooks-search** queries [Hacker News search API](https://hn.algolia.com/api) for search results for a given 
+search term.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- See companion [simple-hooks](https://github.com/bobmacneal/simple-hooks) for another sample application using React hooks.
