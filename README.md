@@ -1,11 +1,12 @@
 # cypress-search-tutorial 
 
 This is a sample search application written in [React](https://reactjs.org/). It demonstrates the rudiments 
-of _end-to-end_ functional testing with [Cypress](https://www.cypress.io/). 
+of _end-to-end_ functional testing using the [Cypress](https://www.cypress.io/) testing framework. 
+[Material-UI](https://material-ui.com/) React components are used for design and functional simplicity.
+
 
 ![Search components](https://github.com/bobmacneal/cypress-search-tutorial/blob/master/src/images/SearchComponents.png)
 
-[Material-UI](https://material-ui.com/) React components are used for design and functional simplicity.
  
 ### Setup
 
