@@ -22,26 +22,26 @@ ___
 
 ### Cypress Tests
 
-to fire up the test runner (shown below): 
+To use the Cypress test runner (animation below), issue the following: 
 
 `$ yarn cy`
 
 ![video](https://github.com/bobmacneal/cypress-search-tutorial/blob/master/src/images/searchspecjs.gif)
 
-to run tests in a command shell:
+Alternatively, to run all the Cypress tests from a command shell, issue the following:
 
 `$ yarn cy:all`
 
 
 ### Hat Tips
 
-- **simple-hooks-search** is based on exercises found in the Udemy course [React Hooks](https://www.udemy.com/react-hooks/) by [Reed Barger](https://www.udemy.com/react-hooks/#instructor-1) and on an informative blog post: [How to fetch data with React Hooks](https://www.robinwieruch.de/react-hooks-fetch-data/) by [Robin Wieruch](https://github.com/rwieruch).
+**cypress-search-tutorial**:
 
-- **simple-hooks-search** Cypress testing is guided by [Cypress Tutorial Videos](https://docs.cypress.io/examples/examples/tutorials.html#Test-a-React-Todo-App).
+- Uses [Hacker News search API](https://hn.algolia.com/api) to a submit search term and to 
+display the resulting hits returned.
 
-- **simple-hooks-search** was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Used examples provided in the 
+[Cypress Tutorial Videos](https://docs.cypress.io/examples/examples/tutorials.html#Test-a-React-Todo-App).
 
-- **simple-hooks-search** queries [Hacker News search API](https://hn.algolia.com/api) for search results for a given 
-search term.
+- Was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-- See companion [simple-hooks](https://github.com/bobmacneal/simple-hooks) for another sample application using React hooks.
