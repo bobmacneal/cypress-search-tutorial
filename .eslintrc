@@ -10,5 +10,11 @@
     "no-console": "warn",
     "sort-imports": ["error", {"ignoreCase": true}],
     "strict": "off"
+  },
+  "plugins": [
+    "cypress"
+  ],
+  "env": {
+    "cypress/globals": true
   }
 }

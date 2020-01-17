@@ -3,7 +3,7 @@ import {AppBar, Typography, withStyles} from '@material-ui/core'
 import React, {useState} from 'react'
 import Logo from './images/logo.png'
 import {MuiThemeProvider} from '@material-ui/core/styles'
-import {PropTypes} from 'prop-types'
+import propTypes from 'prop-types'
 import SearchForm from './components/SearchForm'
 import SearchResults from './components/SearchResults'
 import simpleTheme from './simpleTheme'
@@ -34,7 +34,7 @@ function App ({classes}) {
         </React.Fragment>
       </AppBar>
       <div style={{margin: '80px 15px 15px 15px'}}>
-        <SearchForm onFormSubmited={handleFormSubmitted} />
+        <SearchForm onFormSubmitted={handleFormSubmitted} />
         <SearchResults searchTerm={searchTerm} />
       </div>
     </MuiThemeProvider>
@@ -42,7 +42,7 @@ function App ({classes}) {
 }
 
 App.propTypes = {
-  classes: PropTypes.object.isRequired,
+  classes: propTypes.object.isRequired,
 }
 
 const globalStyles = {

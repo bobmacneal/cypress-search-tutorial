@@ -2,8 +2,9 @@ import {CircularProgress, Typography, withStyles} from '@material-ui/core'
 import {FRIENDLY_DATE_PATTERN, HN_SEARCH_API_URL, HN_SEARCH_RESULTS_LIST_NAME} from '../constants'
 import React, {useEffect, useState} from 'react'
 import axios from "axios"
+import {DataCySelector} from "../constants"
 import moment from 'moment'
-import {PropTypes} from 'prop-types'
+import propTypes from 'prop-types'
 
 function SearchResults ({classes, searchTerm}) {
   const [listItems, setListItems] = useState([])
@@ -45,7 +46,7 @@ function SearchResults ({classes, searchTerm}) {
     return (
       <div
         className={classes.listContainer}
-        data-cy="searchResults"
+        data-cy={DataCySelector.SEARCH_RESULTS_SELECTOR}
       >
         {listItems.map(
           (item) => {
@@ -83,8 +84,8 @@ function SearchResults ({classes, searchTerm}) {
 }
 
 SearchResults.propTypes = {
-  classes: PropTypes.object.isRequired,
-  searchTerm: PropTypes.string.isRequired,
+  classes: propTypes.object.isRequired,
+  searchTerm: propTypes.string.isRequired,
 }
 
 const styles = theme => ({
