@@ -9,7 +9,7 @@ import React, {useRef, useState} from 'react'
 import classNames from 'classnames'
 import ClearIcon from '@material-ui/icons/Clear'
 import {DataCySelector} from "../constants"
-import propTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import SearchIcon from '@material-ui/icons/SearchOutlined'
 
 function SearchForm ({classes, onFormSubmitted}) {
@@ -79,28 +79,28 @@ function SearchForm ({classes, onFormSubmitted}) {
 }
 
 SearchForm.propTypes = {
-  classes: propTypes.object.isRequired,
-  onFormSubmitted: propTypes.func.isRequired,
+  classes: PropTypes.object.isRequired,
+  onFormSubmitted: PropTypes.func.isRequired,
 }
 
 const styles = theme => ({
   searchButton: {
     color: 'black',
-    marginLeft: theme.spacing.unit,
-    marginTop: theme.spacing.unit * 2,
+    marginLeft: theme.spacing(1),
+    marginTop: theme.spacing(2),
   },
   searchContainer: {
     display: 'flex',
     flexDirection: 'row',
   },
   searchIcon: {
-    marginLeft: theme.spacing.unit,
+    marginLeft: theme.spacing(1),
   },
   textField: {
     flexBasis: 200,
   },
   textMargin: {
-    margin: theme.spacing.unit,
+    margin: theme.spacing(1),
   },
 })
 

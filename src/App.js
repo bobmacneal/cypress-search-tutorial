@@ -18,7 +18,7 @@ function App ({classes}) {
   return (
     <MuiThemeProvider theme={simpleTheme}>
       <AppBar color="primary" elevation={1} position="fixed" className={classes.appBar}>
-        <React.Fragment>
+        <>
           <div className={classes.logo}>
             <img src={Logo} height="40" alt="cypress-search-tutorial" />
           </div>
@@ -26,12 +26,12 @@ function App ({classes}) {
             <Typography
               align="right"
               variant="subtitle2"
-              color="black"
+              color="textSecondary"
             >
               {`cypress-search-tutorial v-${process.env.REACT_APP_VERSION}`}
             </Typography>
           </div>
-        </React.Fragment>
+        </>
       </AppBar>
       <div style={{margin: '80px 15px 15px 15px'}}>
         <SearchForm onFormSubmitted={handleFormSubmitted} />

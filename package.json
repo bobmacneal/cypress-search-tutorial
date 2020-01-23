@@ -1,7 +1,7 @@
 {
   "name": "cypress-search-tutorial",
-  "version": "0.3.0",
-  "description": "ReactJs search application that demonstrates react hooks and functional testing with Cypress",
+  "version": "1.0.0",
+  "description": "React search application that demonstrates functional testing with Cypress",
   "main": "index.js",
   "keywords": [
     "react",
@@ -13,7 +13,7 @@
     "end-to-end",
     "integration"
   ],
-  "author": "Bob MacNeal <bob.macneal@workingcompany.com>",
+  "author": "Bob MacNeal",
   "license": "MIT",
   "repository": {
     "type": "git",
