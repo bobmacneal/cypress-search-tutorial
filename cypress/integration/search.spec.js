@@ -2,7 +2,7 @@ import {DataCySelector} from '../../src/constants'
 const searchResponse = require('../fixtures/searchResponse')
 
 describe('Search', () => {
-  const TYPED_SEARCH_INPUT = 'climate'
+  const TYPED_SEARCH_INPUT = 'climate change'
 
   beforeEach(() => {
     cy.visit('/')
