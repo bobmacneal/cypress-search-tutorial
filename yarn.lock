@@ -1528,9 +1528,9 @@
   integrity sha1-PcoOPzOyAPx9ETnAzZbBJoyt/Z0=
 
 "@types/node@*":
-  version "13.1.8"
-  resolved "https://binrepo.target.com/artifactory/api/npm/npms/@types/node/-/node-13.1.8.tgz#1d590429fe8187a02707720ecf38a6fe46ce294b"
-  integrity sha1-HVkEKf6Bh6AnB3IOzzim/kbOKUs=
+  version "13.5.0"
+  resolved "https://binrepo.target.com/artifactory/api/npm/npms/@types/node/-/node-13.5.0.tgz#4e498dbf355795a611a87ae5ef811a8660d42662"
+  integrity sha1-TkmNvzVXlaYRqHrl74EahmDUJmI=
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -10884,9 +10884,9 @@ vary@~1.1.2:
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
 vendors@^1.0.0:
-  version "1.0.3"
-  resolved "https://binrepo.target.com/artifactory/api/npm/npms/vendors/-/vendors-1.0.3.tgz#a6467781abd366217c050f8202e7e50cc9eef8c0"
-  integrity sha1-pkZ3gavTZiF8BQ+CAuflDMnu+MA=
+  version "1.0.4"
+  resolved "https://binrepo.target.com/artifactory/api/npm/npms/vendors/-/vendors-1.0.4.tgz#e2b800a53e7a29b93506c3cf41100d16c4c4ad8e"
+  integrity sha1-4rgApT56Kbk1BsPPQRANFsTErY4=
 
 verror@1.10.0:
   version "1.10.0"
