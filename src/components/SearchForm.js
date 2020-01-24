@@ -8,24 +8,25 @@ import {
 import React, {useRef, useState} from 'react'
 import classNames from 'classnames'
 import ClearIcon from '@material-ui/icons/Clear'
-import {PropTypes} from 'prop-types'
+import {DataCySelector} from "../constants"
+import PropTypes from 'prop-types'
 import SearchIcon from '@material-ui/icons/SearchOutlined'
 
-function SearchForm ({classes, onFormSubmited}) {
+function SearchForm ({classes, onFormSubmitted}) {
   const [term, setTerm] = useState('')
   const searchTermInputReference = useRef()
 
   function handleSearch (event) {
     event.preventDefault()
     if (term.length > 0) {
-      onFormSubmited(term)
+      onFormSubmitted(term)
     }
   }
 
   function handleClearSearchTerm () {
     setTerm('')
     searchTermInputReference.current.focus()
-    onFormSubmited('')
+    onFormSubmitted('')
   }
 
   return (
@@ -35,14 +36,14 @@ function SearchForm ({classes, onFormSubmited}) {
           <div>
             <TextField
               autoFocus
-              id="searchInput"
+              id={DataCySelector.INPUT_SELECTOR}
               className={classNames(classes.textMargin, classes.textField)}
               InputProps={{
                 endAdornment: (
                   <InputAdornment position="end">
                     <IconButton
                       aria-label="Clear search term"
-                      data-cy="clearButton"
+                      data-cy={DataCySelector.CLEAR_BUTTON_SELECTOR}
                       onClick={handleClearSearchTerm}
                       style={{visibility: term.length > 0 ? 'visible' : 'hidden'}}
                     >
@@ -61,7 +62,7 @@ function SearchForm ({classes, onFormSubmited}) {
           <div>
             <Button
               className={classes.searchButton}
-              data-cy="searchButton"
+              data-cy={DataCySelector.SUBMIT_BUTTON_SELECTOR}
               type="submit"
               variant="contained"
             >
@@ -79,27 +80,27 @@ function SearchForm ({classes, onFormSubmited}) {
 
 SearchForm.propTypes = {
   classes: PropTypes.object.isRequired,
-  onFormSubmited: PropTypes.func.isRequired,
+  onFormSubmitted: PropTypes.func.isRequired,
 }
 
 const styles = theme => ({
   searchButton: {
     color: 'black',
-    marginLeft: theme.spacing.unit,
-    marginTop: theme.spacing.unit * 2,
+    marginLeft: theme.spacing(1),
+    marginTop: theme.spacing(2),
   },
   searchContainer: {
     display: 'flex',
     flexDirection: 'row',
   },
   searchIcon: {
-    marginLeft: theme.spacing.unit,
+    marginLeft: theme.spacing(1),
   },
   textField: {
     flexBasis: 200,
   },
   textMargin: {
-    margin: theme.spacing.unit,
+    margin: theme.spacing(1),
   },
 })
 

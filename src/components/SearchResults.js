@@ -2,8 +2,9 @@ import {CircularProgress, Typography, withStyles} from '@material-ui/core'
 import {FRIENDLY_DATE_PATTERN, HN_SEARCH_API_URL, HN_SEARCH_RESULTS_LIST_NAME} from '../constants'
 import React, {useEffect, useState} from 'react'
 import axios from "axios"
+import {DataCySelector} from "../constants"
 import moment from 'moment'
-import {PropTypes} from 'prop-types'
+import PropTypes from 'prop-types'
 
 function SearchResults ({classes, searchTerm}) {
   const [listItems, setListItems] = useState([])
@@ -45,7 +46,7 @@ function SearchResults ({classes, searchTerm}) {
     return (
       <div
         className={classes.listContainer}
-        data-cy="searchResults"
+        data-cy={DataCySelector.SEARCH_RESULTS_SELECTOR}
       >
         {listItems.map(
           (item) => {
@@ -75,7 +76,7 @@ function SearchResults ({classes, searchTerm}) {
                 </div>
               </div>
             )
-          }
+          },
         )}
       </div>
     )
@@ -91,31 +92,31 @@ const styles = theme => ({
   details: {
     color: theme.palette.grey[600],
     fontSize: '12px',
-    paddingBottom: theme.spacing.unit * 2,
+    paddingBottom: theme.spacing(2),
   },
   errorContainer: {
     display: 'flex',
     justifyContent: 'center',
-    height: theme.spacing.unit * 5,
+    height: theme.spacing(5),
   },
   list: {
     borderBottom: `solid 1px ${theme.palette.grey[600]}`,
     display: 'flex',
     flexDirection: 'column',
-    marginLeft: theme.spacing.unit * 1.5,
+    marginLeft: theme.spacing(1.5),
     width: '100%',
   },
   listContainer: {
-    marginTop: theme.spacing.unit * 4,
+    marginTop: theme.spacing(4),
   },
   progressContainer: {
     display: 'flex',
-    height: theme.spacing.unit * 5,
-    paddingLeft: theme.spacing.unit,
+    height: theme.spacing(5),
+    paddingLeft: theme.spacing(1),
   },
   title: {
-    paddingBottom: theme.spacing.unit,
-    paddingTop: theme.spacing.unit * 2,
+    paddingBottom: theme.spacing(1),
+    paddingTop: theme.spacing(2),
   },
 })
 
