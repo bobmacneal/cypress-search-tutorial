@@ -25,5 +25,6 @@ yarn-error.log*
 
 # cypress
 cypress/screenshots
+cypress/videos
 cypress/.DS_Store
 
