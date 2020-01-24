@@ -26,7 +26,7 @@ To use the Cypress test runner (animation below), issue the following:
 
 `$ yarn cy`
 
-![video](https://github.com/bobmacneal/cypress-search-tutorial/blob/master/src/images/searchspecjs.gif)
+![video](https://github.com/bobmacneal/cypress-search-tutorial/blob/master/src/images/search.spec.js.gif)
 
 Alternatively, to run all the Cypress tests from a command shell, issue the following:
 
