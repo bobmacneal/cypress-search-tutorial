@@ -30,8 +30,8 @@ function SearchForm ({classes, onFormSubmitted}) {
   }
 
   return (
-    <React.Fragment>
-      <form onSubmit={handleSearch} >
+    <>
+      <form onSubmit={handleSearch}>
         <div className={classes.searchContainer}>
           <div>
             <TextField
@@ -74,7 +74,7 @@ function SearchForm ({classes, onFormSubmitted}) {
           </div>
         </div>
       </form>
-    </React.Fragment>
+    </>
   )
 }
 
